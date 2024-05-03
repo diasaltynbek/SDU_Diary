@@ -115,7 +115,7 @@ const Header = () => {
               <Link className="nav-link text-white" to="/clubs">
                 CLUBS
               </Link>
-              <Link className="nav-link text-white" to="#">
+              <Link className="nav-link text-white" to="/contacts">
                 CONTACTS
               </Link>
               <Link className="nav-link text-white" to="#">

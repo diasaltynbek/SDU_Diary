@@ -1,0 +1,40 @@
+p {
+  margin: 0;
+}
+
+.contacts_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #8a2be2;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.address {
+  font-weight: bold;
+}
+
+.address_div {
+  display: flex;
+  flex-direction: column;
+}
