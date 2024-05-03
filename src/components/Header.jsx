@@ -88,7 +88,8 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="col-md-3 mb-2 mb-md-0">
+            <div className="col-md-3 mb-2 d-flex">
+              <img src="src/assets/Logo.png" alt="" />  
               <a href="/" className="d-inline-flex link-body-emphasis text-decoration-none">
                 <svg
                   className={styles.bi}

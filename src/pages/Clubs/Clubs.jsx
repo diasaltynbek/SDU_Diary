@@ -1,36 +1,29 @@
 import { useState } from 'react';
 import Header from '../../components/Header';
-import styles from './About.module.css';
+import styles from './Clubs.module.css';
 
-const About = () => {
+const Clubs = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (index) => {
     setActiveTab(index);
   };
-
   return (
-    <div className={styles.about_container}>
-      <div className={styles.back_about}>
-        <div className={styles.overlay_for_about}>
-          <Header />
-
-          <div
-            className={`${styles.about_mainText} container text-white sec-text`}
-            style={{ fontSize: '1.5rem' }}
-          >
-            <h1 style={{ fontSize: '3.5  rem', fontWeight: '500' }}>About Us</h1>
+    <div className={styles.clubs_container}>
+      <div className={styles.back_clubs}>
+        <div className={styles.overlay_for_clubs}>
+            <Header />
+          <div className="container text-white sec-text" style={{ fontSize: '1.5rem' }}>
+            <h1 style={{ fontSize: '3.5  rem', fontWeight: '500' }}>Clubs</h1>
             <hr style={{ width: '70px', border: '2px solid white' }} />
-            <p>
-              We help to new students successfully adapt to the academic process and student life.
-            </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and <br /> typesetting industry.</p>
           </div>
         </div>
       </div>
 
       <div className="d-flex flex-column gap-4">
-        <div className={`${styles.modal_container} container d-flex mt-5`}>
-          {[1, 2, 3].map((tabIndex) => (
+        <div className={`container d-flex flex-wrap mt-5`}>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((tabIndex) => (
             <button
               key={tabIndex}
               defaultValue={1}
@@ -42,7 +35,16 @@ const About = () => {
               onClick={() => handleTabClick(tabIndex)}
               style={{ backgroundColor: '#140040' }}
             >
-              {tabIndex === 1 ? 'About SDU' : tabIndex === 2 ? 'Faculty' : 'Campus'}
+              {
+              tabIndex === 1 ? 'Football Club' :
+              tabIndex === 2 ? 'Event Club' :
+              tabIndex === 3 ? 'Vision Club' : 
+              tabIndex === 4 ? 'Red Crescent club' : 
+              tabIndex === 5 ? 'Shapagat club' : 
+              tabIndex === 6 ? 'Puzzle club' :
+              tabIndex === 7 ? 'Dombyra club' :
+              tabIndex === 8 ? 'Oyan theatre club' : 'Zhasa club'
+              }
             </button>
           ))}
         </div>
@@ -51,45 +53,8 @@ const About = () => {
           <div className="d-flex flex-column gap-5">
             {activeTab === 1 && (
               <div>
-                <div
-                  className="text-white p-3 d-flex align-items-center gap-4"
-                  style={{ backgroundColor: '#140040' }}
-                >
-                  <div className={`${styles.about_SDU} px-5`}>
-                    <h1>About Suleyman Demirel University</h1>
-                    <hr style={{ width: '80px', border: '2px solid white' }} />
-                    <p>
-                      Since 1996 SDU University has been one of the leading and innovative academic
-                      institutions in Kazakhstan that improves educational program through new ideas
-                      and creativity.
-                      <br />
-                      <br />
-                      The SDU Diary is a comprehensive digital planner designed to assist freshmen
-                      and students at SDU in organizing their academic and personal schedules.
-                      <br />
-                      <br />
-                      SDU University is committed to fostering a diverse and inclusive community
-                      that values and respects individuals of all backgrounds. We believe that
-                      diversity enriches the educational experience and promotes a culture of
-                      openness and acceptance.
-                      <br />
-                      <br />
-                      At SDU, we celebrate diversity in all its forms, including race, ethnicity,
-                      nationality, gender identity, age, religion, and socio-economic background. We
-                      recognize that each person brings unique perspectives, experiences, and
-                      talents to our community, and we are committed to creating an inclusive
-                      environment that embraces and harnesses these differences.
-                    </p>
-                  </div>
-                  <img
-                    className={`${styles.aboutSDU_png} p-3`}
-                    src="src/assets/AboutSDU.png"
-                    alt=""
-                  />
-                </div>
-
                 <div className="d-flex mt-5 p-5 gap-5 align-items-center">
-                  <img className={styles.aboutSDU2_png} src="src/assets/AboutSDU2.png" alt="" />
+                  <img className={styles.aboutSDU2_png} src="src/assets/SDUCLubs1.png" alt="" />
                   <div className={`${styles.about_SDU2} p-4`}>
                     <h1>About Suleyman Demirel University</h1>
                     <hr style={{ width: '80px', border: '2px solid black' }} />
@@ -448,4 +413,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Clubs;

@@ -4,7 +4,7 @@ import SignIn from './pages/SignIn';
 import './index.css';
 import ForgotPassword from './pages/ForgotPassword';
 import About from './pages/About/About';
-import Clubs from './pages/Clubs';
+import Clubs from './pages/Clubs/Clubs';
 import News from './pages/News';
 
 function App() {
