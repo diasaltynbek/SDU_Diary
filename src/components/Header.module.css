@@ -1,0 +1,62 @@
+.hidden_navbar {
+  display: none;
+  transition: ease-in 1s;
+}
+
+.collapse {
+  background-color: #140040;
+  padding: 1rem;
+}
+
+.hidden_list {
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .hidden_navbar {
+    display: block;
+  }
+
+  .items_visibility {
+    display: none;
+  }
+}
+
+.signSearch {
+  display: flex;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.search_form {
+  display: flex;
+}
+
+.search_input {
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s, opacity 0.3s;
+}
+
+.btn_search_icon {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.btn_search_icon svg {
+  fill: white;
+  transition: fill 0.3s;
+}
+
+.search_form:hover .search_input {
+  width: auto;
+  opacity: 1;
+}
+
+.search_form:hover .btn_search_icon svg {
+  fill: #6c757d; /* Change color when hovered */
+}
