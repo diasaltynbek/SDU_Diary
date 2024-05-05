@@ -1,5 +1,5 @@
 import styles from './FirstContent.module.css';
-import Header from '../Header/Header';
+import { Header } from '../Header/Header';
 import DefaultTextContent from '../DefaultTextContent/DefaultTextContent';
 
 const FirstContent = ({ imgURL, title, body }) => {

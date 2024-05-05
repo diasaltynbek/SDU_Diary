@@ -26,3 +26,25 @@
   color: #fff;
   border-radius: 1rem;
 }
+
+.fetchQuestionsCont {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.questionAnswerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for grid layout */
+  gap: 1rem;
+}
+
+.questionAnswer {
+  border: 2px solid #ccc; /* Add border to each question-answer pair */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.hiddenQuestion {
+  display: none;
+}

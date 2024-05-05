@@ -1,0 +1,30 @@
+.aboutClub {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.aboutClub img {
+  width: 30rem;
+}
+
+.tournament {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+.tournament_images {
+  display: flex;
+  padding: 2rem 0;
+  gap: 3rem;
+}
+
+.tournament_images img {
+  width: 20rem;
+}
+
+@media screen and (max-width: 1200px) {
+}

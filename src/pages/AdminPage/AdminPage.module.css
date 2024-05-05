@@ -1,0 +1,42 @@
+/* AdminPage.module.css */
+.adminPage {
+  display: flex;
+}
+
+/* Sidebar.module.css */
+.sidebar {
+  width: 200px;
+  background-color: #140040;
+  color: #fff;
+  height: 100%; /* Make the sidebar take the full height of the viewport */
+  position: fixed; /* Fix the sidebar position */
+  top: 0; /* Align the sidebar to the top */
+  left: 0; /* Align the sidebar to the left */
+  padding: 1.5rem;
+}
+
+.sidebar img {
+  padding: 30px 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.sidebar li:hover {
+  background-color: #fff;
+  color: #140040;
+}
+
+/* MainContent.module.css */
+.mainContent {
+  padding: 3rem;
+  flex: 1;
+  padding-left: 250px; /* Adjust padding to accommodate the width of the sidebar */
+}

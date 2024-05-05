@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-const Header = () => {
+export const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
 
   const ShowHeader = () => {
@@ -12,6 +12,19 @@ const Header = () => {
   const CloseHeader = () => {
     setShowHeader(false);
   };
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const storedData = JSON.parse(localStorage.getItem('user_data'));
+    console.log('storedData', storedData);
+
+    if (storedData) {
+      setData(storedData);
+    }
+  }, []);
+
+  console.log('data', data);
 
   return (
     <div style={{ width: '100%', position: 'absolute', top: '0', left: '0' }}>
@@ -71,7 +84,7 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <div style={{ padding: '0 3rem' }} className="py-3 mb-4 border-bottom">
+        <div className={`${styles.headerContainer} border-bottom`}>
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
             <div className={`navbar ${styles.hidden_navbar} navbar-dark`}>
               <div className="container">
@@ -88,21 +101,14 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="col-md-3 mb-2 d-flex">
-              <img src="src/assets/Logo.png" alt="" />
-              <a href="/" className="d-inline-flex link-body-emphasis text-decoration-none">
-                <svg
-                  className={styles.bi}
-                  width="70"
-                  height="70"
-                  role="img"
-                  aria-label="Bootstrap"
-                ></svg>
-              </a>
+            <div className="d-flex">
+              <Link to="/">
+                <img className={styles.headerLogo} src="src/assets/Logo.png" alt="" />
+              </Link>
             </div>
 
             <ul
-              className={`nav ${styles.items_visibility} col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0`}
+              className={`nav ${styles.items_visibility} col-12 col-lg-auto mb-2 justify-content-center mb-md-0`}
             >
               <Link className="nav-link px-2 link-secondary" to="/">
                 HOME
@@ -110,7 +116,7 @@ const Header = () => {
               <Link className="nav-link text-white" to="/about">
                 ABOUT US
               </Link>
-              <Link className="nav-link text-white" to="/news">
+              <Link className="nav-link text-white" to="/sdu_alumni">
                 SDU ALUMNI
               </Link>
               <Link className="nav-link text-white" to="/clubs">
@@ -119,16 +125,13 @@ const Header = () => {
               <Link className="nav-link text-white" to="/contacts">
                 CONTACTS
               </Link>
-              <Link className="nav-link text-white" to="#">
+              <Link className="nav-link text-white" to="/quote">
                 QUOTE
               </Link>
             </ul>
 
             <div className={`${styles.signSearch} text-end`}>
-              <form
-                className={`col-12 col-lg-auto mb-3 mb-lg-0 ${styles.search_form}`}
-                role="search"
-              >
+              <form className={`${styles.search_form}`} role="search">
                 <button type="button" className={`btn ${styles.btn_search_icon}`}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -151,9 +154,17 @@ const Header = () => {
               </form>
 
               <div>
-                <Link to="/sign" type="button" className="btn text-white" data-bs-toggle="button">
-                  SIGN IN
-                </Link>
+                {data ? (
+                  <div>
+                    <Link to="/adminPage" className={styles.email}>
+                      {data.email}
+                    </Link>
+                  </div>
+                ) : (
+                  <Link style={{ textDecoration: 'none', color: 'white', margin: '0' }} to="/sign">
+                    Sign In
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -162,5 +173,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

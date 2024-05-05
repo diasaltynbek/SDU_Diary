@@ -1,6 +1,21 @@
+.headerContainer {
+  padding: 1rem 3rem;
+}
+
+.email {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
 .hidden_navbar {
   display: none;
   transition: ease-in 1s;
+}
+
+.headerLogo {
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .collapse {
@@ -59,4 +74,28 @@
 
 .search_form:hover .btn_search_icon svg {
   fill: #6c757d; /* Change color when hovered */
+}
+
+@media screen and (max-width: 1000px) {
+  .headerLogo {
+    width: 70%;
+  }
+
+  .headerContainer {
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .email {
+    font-size: 1rem;
+  }
+
+  .headerLogo {
+    width: 60%;
+  }
+
+  .headerContainer {
+    padding: 0.5rem 1rem;
+  }
 }
