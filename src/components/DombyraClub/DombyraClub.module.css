@@ -1,0 +1,56 @@
+.aboutClub {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.aboutClub img {
+  max-width: 50%;
+  height: min-content;
+}
+
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.imageRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.imageRow img {
+  max-width: 45%;
+  height: min-content;
+}
+
+.imageRow p {
+  font-size: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .imageGallery {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .imageRow p {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageGallery {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .imageRow p {
+    font-size: 50%;
+  }
+}

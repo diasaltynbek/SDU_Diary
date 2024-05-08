@@ -1,0 +1,44 @@
+.aboutClub {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.aboutClub img {
+  max-width: 50%;
+  height: min-content;
+}
+
+.backgroundContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #140040;
+  padding: 3rem;
+}
+
+.backgroundContainer img {
+  max-width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutClub {
+    gap: 2rem;
+  }
+
+  .backgroundContainer {
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutClub {
+    gap: 1rem;
+  }
+
+  .backgroundContainer {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}

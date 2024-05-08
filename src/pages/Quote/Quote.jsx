@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import FirstContent from '../../components/FirstContent/FirstContent';
-import BackgroundQuote from '../../assets/Background_quote.png';
 import Footer from '../../components/Footer/Footer';
 
 import styles from './Quote.module.css';
 import axios from 'axios';
+
+import BackgroundQuote from '../../assets/Background_quote.avif';
 
 const Quote = () => {
   const [title, setTitle] = useState('');

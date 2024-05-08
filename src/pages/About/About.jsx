@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import styles from './About.module.css';
-import NewsComponent from '../../components/News/News';
 import Campus from '../../components/Campus/Campus';
 import FirstContent from '../../components/FirstContent/FirstContent';
-import backgroundAbout from '../../assets/Background_about.png';
+// import Blogs from '../../components/Blogs/Blogs';
+import Faculty from '../../components/Faculty/Faculty';
 import Footer from '../../components/Footer/Footer';
+
+import backgroundAbout from '../../assets/Background_about.avif';
+import AboutSDU from '../../assets/AboutSDU.avif';
+import AboutSDU2 from '../../assets/AboutSDU2.avif';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -44,7 +48,7 @@ const About = () => {
             {activeTab === 1 && (
               <div>
                 <div
-                  className="text-white p-3 d-flex align-items-center gap-4"
+                  className={`${styles.coloredAbout} text-white d-flex align-items-center`}
                   style={{ backgroundColor: '#140040' }}
                 >
                   <div className={`${styles.about_SDU} px-5`}>
@@ -73,15 +77,11 @@ const About = () => {
                       environment that embraces and harnesses these differences.
                     </p>
                   </div>
-                  <img
-                    className={`${styles.aboutSDU_png} p-3`}
-                    src="src/assets/AboutSDU.png"
-                    alt=""
-                  />
+                  <img className={`${styles.aboutSDU_png} p-3`} src={AboutSDU} alt="" />
                 </div>
 
-                <div className="d-flex mt-5 p-5 gap-5 align-items-center">
-                  <img className={styles.aboutSDU2_png} src="src/assets/AboutSDU2.png" alt="" />
+                <div className={`${styles.non_coloredAbout} d-flex mt-5 align-items-center`}>
+                  <img className={styles.aboutSDU2_png} src={AboutSDU2} alt="" />
                   <div className={`${styles.about_SDU2} p-4`}>
                     <h1>About Suleyman Demirel University</h1>
                     <hr style={{ width: '80px', border: '2px solid black' }} />
@@ -103,7 +103,7 @@ const About = () => {
                 </div>
               </div>
             )}
-            {activeTab === 2 && <NewsComponent />}
+            {activeTab === 2 && <Faculty />}
             {activeTab === 3 && <Campus />}
 
             <Footer />

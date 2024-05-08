@@ -1,0 +1,64 @@
+.facultyContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 20px; /* Adjust the gap between items */
+  padding: 2rem;
+}
+
+.facultyItem {
+  background-color: #140040;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px; /* Adjust border radius as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust box shadow as needed */
+  overflow: hidden; /* Ensure contents don't overflow */
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* .dropdownToggle {
+  width: 100%;
+  padding: 10px;
+  background-color: #140040;
+  color: #ffffff; 
+  border: none;
+  border-radius: 0;
+}
+
+.dropdownToggle:focus {
+  outline: none;
+} */
+
+.facultyContent {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust gap between logo and text */
+}
+
+.facultyLogo {
+  width: 40px; /* Adjust logo size as needed */
+  height: auto;
+}
+
+/* .dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 200px;
+  background-color: #ffffff; 
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+/* .dropdownItem {
+  font-weight: bold;
+}
+
+.dropdownItem:not(:last-child) {
+  margin-bottom: 10px;
+} */

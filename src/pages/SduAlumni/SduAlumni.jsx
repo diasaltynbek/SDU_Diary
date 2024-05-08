@@ -1,13 +1,14 @@
 import DefaultTextContent from '../../components/DefaultTextContent/DefaultTextContent';
-import backgroundSduAlumni from '../../assets/Background_sdu_alumni.png';
 import FirstContent from '../../components/FirstContent/FirstContent';
 import styles from './sduAlumni.module.css';
 
-import Amirzhan from '../../assets/Amirzhan.png';
-import Aydana from '../../assets/Aydana.png';
-import Indira from '../../assets/Indira.png';
-import Rasul from '../../assets/Rasul.png';
-import Daniyar from '../../assets/Daniyar.png';
+import backgroundSduAlumni from '../../assets/Background_sdu_alumni.avif';
+import Amirzhan from '../../assets/Amirzhan.avif';
+import Aydana from '../../assets/Aydana.avif';
+import Indira from '../../assets/Indira.avif';
+import Rasul from '../../assets/Rasul.avif';
+import Daniyar from '../../assets/Daniyar.avif';
+
 import Footer from '../../components/Footer/Footer';
 
 const SduAlumni = () => {

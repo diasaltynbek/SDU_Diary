@@ -13,3 +13,45 @@
   padding: 3rem;
   gap: 2rem;
 }
+
+.imageText_container img {
+  max-width: 20rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .imageText_container {
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .imageText_container img {
+    max-width: 15rem;
+  }
+
+  .imageText_container h1 {
+    font-size: 2rem;
+  }
+
+  .imageText_container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageText_container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .imageText_container img {
+    max-width: 10rem;
+  }
+
+  .imageText_container h1 {
+    font-size: 1rem;
+  }
+
+  .imageText_container p {
+    font-size: 0.6rem;
+  }
+}

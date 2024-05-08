@@ -1,8 +1,26 @@
 .campusContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 10rem;
   padding: 5rem 0;
+}
+
+.canteenOutContainer {
+  gap: 5rem;
+  padding: 5rem;
+}
+
+.campusContainer img {
+  max-width: 20rem;
+}
+
+.libraryPhotoContainer {
+  gap: 5rem;
+}
+
+.libraryPhotoContainer img {
+  max-width: 15rem;
 }
 
 .linePhotoContainer {
@@ -15,11 +33,95 @@
   width: 100%;
 }
 
+.canteenPhotoContainer {
+  gap: 2rem;
+}
+
+.canteenPhotoContainer img {
+  max-width: 100%;
+}
+
+.motivationPhotoContainer img {
+  max-width: 40%;
+}
+
+.motivationPhotoContainer h1 {
+  font-size: 140%;
+}
+
 @media screen and (max-width: 1200px) {
-  .campusPhotoContainer {
+  .canteenOutContainer {
+    padding: 3rem;
+    gap: 3rem;
   }
 
-  .linePhotoContainer img {
-    width: 10rem;
+  .campusContainer {
+    padding: 20px 0;
+    gap: 3rem;
+  }
+
+  .campusPhotoContainer img {
+    max-width: 9rem;
+  }
+
+  .linePhotoContainer h1,
+  .libraryContainer h1,
+  .canteenContainer h1 {
+    font-size: 2rem;
+  }
+
+  .libraryPhotoContainer {
+    gap: 3rem;
+  }
+
+  .libraryContainer p,
+  .canteenContainer p {
+    font-size: 1rem;
+  }
+
+  .libraryPhotoContainer img {
+    max-width: 7rem;
+  }
+
+  .motivationPhotoContainer img {
+    max-width: 40%;
+  }
+
+  .motivationPhotoContainer h1 {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .campusContainer {
+    gap: 1rem;
+  }
+
+  .libraryPhotoContainer {
+    gap: 1rem;
+  }
+
+  .canteenOutContainer {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .campusPhotoContainer img {
+    max-width: 4rem;
+  }
+
+  .linePhotoContainer h1,
+  .libraryContainer h1,
+  .canteenContainer h1 {
+    font-size: 1rem;
+  }
+
+  .libraryContainer p,
+  .canteenContainer p {
+    font-size: 0.6rem;
+  }
+
+  .libraryPhotoContainer img {
+    max-width: 3rem;
   }
 }

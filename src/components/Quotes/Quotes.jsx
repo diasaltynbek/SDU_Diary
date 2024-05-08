@@ -9,11 +9,11 @@ const Quotes = () => {
       `https://diplomka-backend.vercel.app/api/admin/quotes/${quote_id}`
     );
 
-    const selected_question = response.data;
+    const selected_quote = response.data;
 
     const showedQuestion = {
-      title: selected_question.title,
-      description: selected_question.description,
+      title: selected_quote.title,
+      description: selected_quote.description,
       show: true
     };
 

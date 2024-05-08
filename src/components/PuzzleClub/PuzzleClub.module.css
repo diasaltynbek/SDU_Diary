@@ -1,0 +1,33 @@
+.aboutClub {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.aboutClub img {
+  max-width: 50%;
+  height: min-content;
+}
+
+.imageRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.imageRow img {
+  width: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+  .imageRow {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .imageRow {
+    gap: 1rem;
+  }
+}
