@@ -1,0 +1,61 @@
+.aboutClub {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.aboutClub img {
+  max-width: 50%;
+  height: min-content;
+}
+
+.aboutClub2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.backgroundContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #140040;
+  padding: 3rem;
+}
+
+.imageRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.imageRow img {
+  max-width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .backgroundContainer {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .imageRow {
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .backgroundContainer {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .imageRow {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

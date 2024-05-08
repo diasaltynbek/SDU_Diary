@@ -40,3 +40,15 @@
   color: #140040;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1000px) {
+  .quoteContainer {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quoteContainer {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

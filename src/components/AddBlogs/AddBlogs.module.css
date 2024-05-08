@@ -1,0 +1,68 @@
+.blogsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleContainer button {
+  width: 10rem;
+  border-radius: 1rem;
+}
+
+.createPostContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.createPostContainer div {
+  display: flex;
+  justify-content: end;
+}
+
+.createPostContainer div button {
+  border: none;
+  width: 5rem;
+}
+
+.blogButtons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.editButton,
+.deleteButton {
+  margin-left: 5px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page-item {
+  margin: 0 2px;
+}
+
+.page-link {
+  cursor: pointer;
+}

@@ -5,13 +5,13 @@
 
 /* Sidebar.module.css */
 .sidebar {
-  width: 200px;
+  max-width: 100%;
   background-color: #140040;
   color: #fff;
-  height: 100%; /* Make the sidebar take the full height of the viewport */
-  position: fixed; /* Fix the sidebar position */
-  top: 0; /* Align the sidebar to the top */
-  left: 0; /* Align the sidebar to the left */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 1.5rem;
 }
 
@@ -39,4 +39,16 @@
   padding: 3rem;
   flex: 1;
   padding-left: 250px; /* Adjust padding to accommodate the width of the sidebar */
+}
+
+@media screen and (max-width: 1000px) {
+  .mainContent {
+    padding-left: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainContent {
+    padding-left: 180px;
+  }
 }

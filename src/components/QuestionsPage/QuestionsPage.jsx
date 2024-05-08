@@ -4,7 +4,7 @@ import styles from './QuestionsPage.module.css';
 
 const QuestionsPage = () => {
   const [shownQuestions, setShownQuestions] = useState([]);
-  const [answer, setAnswer] = useState({});
+  const [visitedQuestions, setVisitedQuestions] = useState({});
 
   useEffect(() => {
     async function fetchQuestions() {
@@ -21,6 +21,23 @@ const QuestionsPage = () => {
     fetchQuestions();
   }, []);
 
+  function sendEmail(name, emailAddress, question_id, question) {
+    // Construct the email URL with recipient email, subject, and body
+    const subject = encodeURIComponent('Your question on the website');
+    const body = encodeURIComponent(
+      `Hello ${name},\n\nThank you for your question:\n\n"${question}"\n\nPlease provide an answer.\n\nBest regards.`
+    );
+    const emailUrl = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
+
+    // Open the email window
+    window.open(emailUrl);
+
+    setVisitedQuestions((prevState) => ({
+      ...prevState,
+      [question_id]: true
+    }));
+  }
+
   async function handleShowQuestion(question_id) {
     const response = await axios.get(
       `https://diplomka-backend.vercel.app/api/admin/questions/${question_id}`
@@ -28,20 +45,13 @@ const QuestionsPage = () => {
 
     const selected_question = response.data;
 
-    const showedQuestion = {
-      title: selected_question.title,
-      description: selected_question.description,
-      tellNumber: selected_question.tellNumber,
-      answer: answer,
-      show: true
-    };
-
     try {
-      const response = await axios.put(
-        `https://diplomka-backend.vercel.app/api/admin/questions/${question_id}`,
-        showedQuestion
+      sendEmail(
+        selected_question.title,
+        selected_question.tellNumber,
+        question_id,
+        selected_question.description
       );
-      console.log('updated_question', response.data);
     } catch (error) {
       console.error(error);
     }
@@ -57,14 +67,12 @@ const QuestionsPage = () => {
       console.error(error);
     }
   }
-
-  const handleInputChange = (e, question_id) => {
-    // Update the answers state with the new value
-    setAnswer({
-      ...answer,
-      [question_id]: e.target.value
-    });
-  };
+  //   // Update the answers state with the new value
+  //   setAnswer({
+  //     ...answer,
+  //     [question_id]: e.target.value
+  //   });
+  // };
 
   return (
     <div>
@@ -79,20 +87,20 @@ const QuestionsPage = () => {
                   <p>{question.tellNumber}</p>
                 </div>
                 <p>{question.description}</p>
-                <p>{question.answer}</p>
-                <input
+                {/* <input
                   value={answer[question._id] || ''} // Use the corresponding answer value from state
                   onChange={(e) => handleInputChange(e, question._id)} // Pass question ID to identify the input
                   type="text"
                   className="form-control"
                   placeholder="Write answer here..."
-                />
+                /> */}
                 <div className={styles.btnsContainer}>
                   <button
                     className="btn btn-outline-success"
-                    onClick={() => handleShowQuestion(question._id)}
+                    onClick={() => handleShowQuestion(question._id, question.description)}
+                    disabled={visitedQuestions[question._id]}
                   >
-                    Show
+                    Answer in gmail
                   </button>
                   <button
                     className="btn btn-outline-danger"

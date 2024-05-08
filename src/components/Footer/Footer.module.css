@@ -7,6 +7,13 @@
   padding: 3rem;
 }
 
+.footerText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+}
+
 .footer_firstPart img {
   width: 5rem;
   height: 5rem;
@@ -26,7 +33,37 @@
   align-items: center;
 }
 
+.footer_secondPart {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.playStore {
+  display: flex;
+  gap: 1rem;
+  max-width: 45%;
+}
+
+.playStore img {
+  max-width: 45%;
+  height: min-content;
+}
+
+.messengers {
+  display: flex;
+  max-width: 45%;
+}
+
+.messengers img {
+  max-width: 80%;
+}
+
 @media screen and (max-width: 1000px) {
+  .footer_firstPart {
+    padding: 2rem;
+  }
+
   .footer_firstPart img {
     width: 3rem;
     height: 3rem;
@@ -44,6 +81,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .footer_firstPart {
+    padding: 1rem;
+  }
+
   .footer_firstPart img {
     width: 2rem;
     height: 2rem;

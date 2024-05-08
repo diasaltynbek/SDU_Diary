@@ -1,9 +1,10 @@
 import FirstContent from '../../components/FirstContent/FirstContent';
 import styles from './Contacts.module.css';
-import Background_contacts_quote from '../../assets/Background_contacts.png';
 import { FAQ } from '../../components/FAQ/FAQ';
 import Footer from '../../components/Footer/Footer';
 import DefaultTextContent from '../../components/DefaultTextContent/DefaultTextContent';
+
+import Background_contacts_quote from '../../assets/Background_contacts.avif';
 
 const Contacts = () => {
   return (
@@ -18,7 +19,6 @@ const Contacts = () => {
           <img
             src="https://th.bing.com/th/id/OIP.Pn99fk0yOFvkTzttuauS4gHaHa?w=512&h=512&rs=1&pid=ImgDetMain"
             alt=""
-            width="40px"
           />
           <div className={styles.address_div}>
             <p>Address</p>
@@ -29,7 +29,6 @@ const Contacts = () => {
           <img
             src="https://th.bing.com/th/id/OIP.1y6erh6pbE3TQH5G4_pU7wHaGS?rs=1&pid=ImgDetMain"
             alt=""
-            width="40px"
           />
           <div className={styles.address_div}>
             <p>Address</p>
@@ -40,7 +39,6 @@ const Contacts = () => {
           <img
             src="https://th.bing.com/th/id/OIP.Uh9zACcVt6jr9ym3ZYY58AAAAA?rs=1&pid=ImgDetMain"
             alt=""
-            width="40px"
           />
           <div className={styles.address_div}>
             <p>Address</p>

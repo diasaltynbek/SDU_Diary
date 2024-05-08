@@ -16,14 +16,17 @@ p {
 }
 
 .card {
-  background-color: #f9f9f9;
-  border: 1px solid #8a2be2;
-  border-radius: 10px;
-  padding: 10px;
   display: flex;
   align-items: center;
+  border: 1px solid #140040;
+  border-radius: 10px;
+  padding: 10px;
   gap: 1rem;
-  width: 20rem;
+  max-width: 30%;
+}
+
+.card img {
+  max-width: 10%;
 }
 
 .icon {
@@ -37,4 +40,25 @@ p {
 .address_div {
   display: flex;
   flex-direction: column;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+  .cardContainer {
+    gap: 2rem;
+  }
+
+  .address_div p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    gap: 1rem;
+  }
+
+  .address_div p {
+    font-size: 0.7rem;
+  }
 }
