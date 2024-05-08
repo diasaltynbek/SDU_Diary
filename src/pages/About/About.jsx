@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './About.module.css';
 import Campus from '../../components/Campus/Campus';
 import FirstContent from '../../components/FirstContent/FirstContent';
-// import Blogs from '../../components/Blogs/Blogs';
+import Blogs from '../../components/Blogs/Blogs';
 import Faculty from '../../components/Faculty/Faculty';
 import Footer from '../../components/Footer/Footer';
 
@@ -26,7 +26,7 @@ const About = () => {
       />
       <div className="d-flex flex-column gap-4">
         <div className={`${styles.modal_container} container d-flex mt-5`}>
-          {[1, 2, 3].map((tabIndex) => (
+          {[1, 2, 3, 4].map((tabIndex) => (
             <button
               key={tabIndex}
               defaultValue={1}
@@ -38,7 +38,13 @@ const About = () => {
               onClick={() => handleTabClick(tabIndex)}
               style={{ backgroundColor: '#140040' }}
             >
-              {tabIndex === 1 ? 'About SDU' : tabIndex === 2 ? 'Faculty' : 'Campus'}
+              {tabIndex === 1
+                ? 'About SDU'
+                : tabIndex === 2
+                ? 'Faculty'
+                : tabIndex === 3
+                ? 'Campus'
+                : 'Blogs'}
             </button>
           ))}
         </div>
@@ -105,6 +111,7 @@ const About = () => {
             )}
             {activeTab === 2 && <Faculty />}
             {activeTab === 3 && <Campus />}
+            {activeTab === 4 && <Blogs />}
 
             <Footer />
           </div>
