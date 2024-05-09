@@ -1,6 +1,6 @@
 import DefaultTextContent from '../../components/DefaultTextContent/DefaultTextContent';
 import FirstContent from '../../components/FirstContent/FirstContent';
-import styles from './sduAlumni.module.css';
+import styles from './SduAlumni.module.css';
 
 import backgroundSduAlumni from '../../assets/Background_sdu_alumni.avif';
 import Amirzhan from '../../assets/Amirzhan.avif';

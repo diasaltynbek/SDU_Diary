@@ -7,7 +7,7 @@ import About from './pages/About/About';
 import Clubs from './pages/Clubs/Clubs';
 import News from './components/News/News';
 import Contacts from './pages/Contacts/Contacts';
-import SduAlumni from './pages/sduAlumni/sduAlumni';
+import SduAlumni from './pages/SduAlumni/SduAlumni';
 import AdminPage from './pages/AdminPage/AdminPage';
 import Quote from './pages/Quote/Quote';
 
