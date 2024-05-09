@@ -13,12 +13,12 @@ const Home = () => {
           <h1>SDU DIARY</h1>
           <p>The best knowledge is only here</p>
           <div>
-            <Link to="/about" style={{ textDecoration: 'none' }}>
-              <button
-                className={`btn btn-outline-light px-5 rounded-pill d-flex align-items-center gap-2 ${styles.btn_learn_more}`}
-              >
-                LEARN MORE <span>&#129122;</span>
-              </button>
+            <Link
+              to="/about"
+              style={{ textDecoration: 'none', width: 'min-content' }}
+              className={`btn btn-outline-light px-5 rounded-pill d-flex align-items-center gap-2 ${styles.btn_learn_more}`}
+            >
+              LEARN MORE <span>&#129122;</span>
             </Link>
           </div>
         </div>
