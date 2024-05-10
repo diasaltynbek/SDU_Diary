@@ -12,7 +12,7 @@ const Contacts = () => {
       <FirstContent
         imgURL={Background_contacts_quote}
         title="Contacts"
-        body="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        body="Connect with us today, your gateway to support, inquiries, and collaboration. Let's start a conversation!"
       />
       <div className={styles.cardContainer}>
         <div className={styles.card}>

@@ -25,7 +25,7 @@ const Clubs = () => {
       <FirstContent
         imgURL={BackgroundClubs}
         title="Clubs"
-        body="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        body="Join the club! Explore passions, forge connections, and unlock new experiences in our vibrant community of like-minded individuals."
       />
 
       <div className="d-flex flex-column gap-4">

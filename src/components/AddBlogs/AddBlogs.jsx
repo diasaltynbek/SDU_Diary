@@ -31,10 +31,22 @@ const Blogs = () => {
       return console.error('The data is not found');
     }
 
+    const fetchById = {
+      teacherId: storedData.teacherId
+    };
+
     setStoredIds(storedData);
 
     try {
-      const response = await axios.get('https://diplomka-backend.vercel.app/api/teacher/blogs');
+      const response = await axios.get(
+        'https://diplomka-backend.vercel.app/api/teacher/blogs/',
+        fetchById,
+        {
+          headers: {
+            'Content-Type': 'application/json' // Set content type header
+          }
+        }
+      );
       const sortedBlogs = response.data.sort(
         (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
       );

@@ -44,18 +44,10 @@ const Campus = () => {
           <h1 className="fw-bold">SDU Library</h1>
           <hr style={{ width: '80px', border: '2px solid black' }} />
           <p>
-            {`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make a type specimen
-                    book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                    recently with desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum. It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at its layout. The
-                    point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                    letters, as opposed to using 'Content here, content here', making it look like
-                    readable English.`}
+            {`The Scientific Library was opened in 1996 and is one of the most important departments of Suleyman Demirel University. Library provides services to undergraduate, graduate and Ph.D. students as well as university staff.
+Book collection: The broad collection of the Library has printed books and e-books, subscriptions and trials to online databases. The book collections are updated annually in accordance with the requirements of the University's educational programs, with the increasing number of electronic publications. Materials are purchased from well-known local and international book-selling networks, publishing houses, information agencies and companies.
+LCC: The transition of the library system to the Classification of the Congress (LCC) in accordance with international standards has begun in 2021. Today, all the literature in the former reading room has been translated into this new format and is available to readers.
+Mission: To contribute to improving the quality of education and science in the SDU by providing reliable and effective information resources, as well as high-quality services to researchers, instructors, staff and students of the university.`}
           </p>
         </div>
       </div>
@@ -66,14 +58,8 @@ const Campus = () => {
             <h1 className="fw-bold">Our Canteen the best taste</h1>
             <hr style={{ width: '80px', border: '2px solid white' }} />
             <p>
-              {`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type
-                      specimen book. It is a long established fact that a reader will be distracted
-                      by the readable content of a page when looking at its layout. The point of
-                      using Lorem Ipsum is that it has a more-or-less normal distribution of
-                      letters, as opposed to using 'Content here, content here', making it look like
-                      readable English.`}
+              {`Many students and employees express a wish to live healthier lives. The university wants to help promote this by offering delicious, healthy and nutritious food in the university canteens that all meet the standards of healthy canteen services set by the Danish Ministry of Environment and Food.
+Thus, the food selection is healthy, low-fat and varied. The canteen strives to offer well-prepared and savory food that is nutritious and adapted to the seasons.`}
             </p>
           </div>
           <div className="d-flex gap-2">
