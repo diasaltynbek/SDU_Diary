@@ -15,10 +15,8 @@ const VisionClub = () => {
         <DefaultTextContent
           titleFsz="2rem"
           bodyFsz="1rem"
-          title="About Event Club"
-          body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-"
+          title="About Vision Club"
+          body="Vision Club is more than just an organization - it's a beacon of empowerment and growth, igniting its mission back in 1998. Since then, we've been dedicated to nurturing the holistic development of our members, particularly our girls, providing them with a platform to flourish and thrive."
         />
       </div>
       <div className={styles.backgroundContainer}>
@@ -27,7 +25,7 @@ const VisionClub = () => {
             titleFsz="2rem"
             bodyFsz="1rem"
             color="white"
-            title="About Event Club"
+            title="About Vision Club"
             body="Within Vision Club, we have curated five distinctive departments, each catering to different facets of personal enrichment:
             Cooking Department: Delve into the art of culinary excellence with our Cooking Department. Immerse yourself in the world of flavors and aromas as we host 3-5 masterclasses every month, unveiling the secrets behind crafting an array of delectable delicacies.
             Mercy Department: Compassion lies at the heart of our Mercy Department. With unwavering dedication, we assemble 7-10 social packages filled with essential goods for families in need, extending our support to orphanages, nursing homes, and collaborating with organizations like Menin Armanym to fulfill children's dreams.

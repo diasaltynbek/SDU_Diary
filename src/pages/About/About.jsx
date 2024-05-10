@@ -92,18 +92,7 @@ const About = () => {
                     <h1>About Suleyman Demirel University</h1>
                     <hr style={{ width: '80px', border: '2px solid black' }} />
                     <p>
-                      {`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make a type specimen
-                    book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                    recently with desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum. It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at its layout. The
-                    point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                    letters, as opposed to using 'Content here, content here', making it look like
-                    readable English.`}
+                      {`Since 1996, SDU University has been one of the leading and leading academic institutions in Kazakhstan, improving the educational program through new ideas and creativity, loyalty to ethics and principles, autonomy and adaptability, achievements without limits, international professionals and leaders of the future. Also, since 2020, SDU University is a member of the League of Academic Integrity. The League of Academic Honesty is an association of higher and postgraduate education organizations of the Republic of Kazakhstan. The league's mission is to improve and improve the quality of education in the country, the way to promote and implement the ten fundamental principles of organized academic integrity.`}
                     </p>
                   </div>
                 </div>

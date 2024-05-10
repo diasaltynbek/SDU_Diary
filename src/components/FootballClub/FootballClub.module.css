@@ -21,11 +21,13 @@
 .tournament_images {
   display: flex;
   padding: 2rem 0;
+  justify-content: center;
+  width: 100%;
   gap: 3rem;
 }
 
 .tournament_images img {
-  max-width: 30%;
+  max-width: 33%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -47,6 +49,10 @@
 
   .tournament p {
     font-size: 1rem;
+  }
+
+  .tournament_images img {
+    max-width: 30%;
   }
 }
 
